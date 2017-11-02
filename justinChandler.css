@@ -17,7 +17,7 @@
    /* When screen is less than 217 pixels, font will scale take away image*/
    margin: -1%;
    padding: 30px 0px;
-   height: 190px;
+   height: 100px;
    clear: left;
 }
 .footer {
