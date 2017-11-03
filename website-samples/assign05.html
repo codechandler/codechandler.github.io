@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+    />
+    <title>assign05.html</title>
+    <link rel="stylesheet" type="text/css" href="assign05.css">
+    <script type="text/javascript" src="assign05.js">
+    </script>
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        Rexburg Auctions
+    </div>
+    <br/><br/>
+    <h1>Order Now!!</h1>
+    <form id="form" action="formSubmitted.html">
+        <fieldset>
+            <h2>Personal Information</h2>
+            <span class="error" id="errPhoneInvalid"
+            style="position:relative;right:-510px;visibility:hidden;">Please enter: ddd-ddd-dddd ex.208-940-0039</span>
+            <br/> First Name:
+            <input class="text" name="inputs" type="text"
+            id="firstname"> Last Name:
+            <input class="text" name="inputs" type="text"
+            id="lastname"> Phone Number:
+            <input class="text" name="inputs" type="text"
+            id="phonenum">
+            <br/> Address:
+            <textarea class="text" name="inputs" rows="1"
+            cols="40" style="position:relative;top:25px"></textarea>
+            <h2>Products:</h2>
+            <table>
+                <tr>
+                    <th>Add-to-Cart</th>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox"
+                        name="ancienthammer"
+                        value="899.99" id="product1">
+                    </td>
+                    <td><img src="hammer.jpg"
+                        alt="Ancient Hammer"
+                        style="width:100px; height:100px">
+                        <br/>Ancient Hammer</td>
+                    <td>This primitive hammer
+                        is believed
+                        <br/> to be around 3000
+                        yrs old</td>
+                    <td>$899.99</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox"
+                        name="rockingchair"
+                        value="230.99" id="product2">
+                    </td>
+                    <td><img src="rockingchair.jpg"
+                        alt="Rocking Chair"
+                        style="width:100px; height:100px">
+                        <br/>Antique Rocking Chair</td>
+                    <td>Antique rocking chair
+                        from the Civil War</td>
+                    <td>$230.99</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox"
+                        name="bookofmormon"
+                        value="4700" id="product3">
+                    </td>
+                    <td><img src="bookofmormon.jpg"
+                        alt="Antique Book of Mormon"
+                        style="width:130px; height:115px">
+                        <br/>First-Edition Book
+                        of Mormon</td>
+                    <td>Rare First-Edition Book
+                        of Mormon</td>
+                    <td>$4700</td>
+                    <tr>
+                        <td>
+                            <input type="checkbox"
+                            name="chandelier"
+                            value=7030 id="product4">
+                        </td>
+                        <td><img src="chandelier.jpg"
+                            alt="Chandelier"
+                            style="width:115px; height:115px">
+                            <br/>Victorian Chandelier</td>
+                        <td>Famous Opera Victorian
+                            Age Chandelier,
+                            in Prime Condition</td>
+                        <td>$7030</td>
+                        <tr>
+                            <td>
+                                <input type="checkbox"
+                                name="abacus"
+                                value=1100.50
+                                id="product5">
+                            </td>
+                            <td><img src="RomanAbacus.jpg"
+                                alt="Abacus"
+                                style="width:110px; height:100px">
+                                <br/>Ancient Roman
+                                Abacus</td>
+                            <td>Ancient Abacus
+                                believed
+                                to be from
+                                Rome (Aprox.
+                                30AD)</td>
+                            <td>$1100.50</td>
+                        </tr>
+                    </tr>
+                </tr>
+            </table>
+            <h2>Cart Total:</h2>
+            <div class="cartTotal">
+                <h2 style="color: black" id="carttotal"></h2>
+            </div>
+            <h2>Card Information:</h2>
+            <input type="radio" name="inputs" value="visa">Visa
+            <input type="radio" name="inputs" value="mastercard">Mastercard
+            <input type="radio" name="inputs" value="americanexpress">American Express
+            <br/>
+            <span class="error" id="errCardNum" style="visibility:hidden;">Please enter 16 digits</span>
+            <span class="error" id="errCardExp" style="position:relative;right:-90px;visibility:hidden;">Invalid Month or Year. Year must be > 2011 ex.12/2020</span>
+            <br/> Credit Card #:
+            <input class="text" name="inputs" type="text"
+            id="cardnum"  maxlength="16" style="width: 180px"> Credit Card Expiration Date:
+            <input class="text" name="inputs" type="text"
+            id="cardexp">
+            <br/>
+            <br/>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </fieldset>
+    </form>
+    <br/>
+    <div class="footer">Rexburg Chamber of Commerce</div>
+    <script type="text/javascript" src="assign05r.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+    />
+    <title>JavaScript Mortgage Calc</title>
+    <link rel="stylesheet" type="text/css" href="assign04.css">
+    <script type="text/javascript" src="assign04.js">
+    </script>
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="headerlogo.jpg" alt="Dunder Mifflin"
+        style="width:250px;height:200px">
+    </div>
+    <div class="topnav">
+        <a class="active" href="index.html">Homepage</a>
+    </div>
+    <h1>Try our Mortgage Calculator!!</h1>
+    <form id="form" action="">
+        <fieldset>
+            APR - Annual Percentage Rate:
+            <input class="name" type="text" id="APR"
+            name="inputs" />
+            <br/> Loan Amount:
+            <input class="name" type="text" id="loanAmount"
+            name="inputs" style="position: relative;right:-135px"
+            />
+            <br/> Loan Term:
+            <input class="name" type="text" id="loanTerm"
+            name="inputs" style="position: relative;right:-159px"
+            />
+            <br/>
+            <br/>
+            <input class="button" type="button" id="calculate"
+            value="Calculate Monthly Payment"
+            size="5" />
+            <h1 id="monthlyPayment"></h1>
+            <br/>
+            <input type="Reset" />
+        </fieldset>
+    </form>
+    <br/>
+    <br/>
+    <div class="footer">
+        <a href="index.html">back to assignment directory</a>
+    </div>
+
+    <script type="text/javascript" src="assign04r.js">
+    </script>
+</body>
+
+</html>

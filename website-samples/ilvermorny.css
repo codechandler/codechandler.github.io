@@ -17,7 +17,7 @@
    /* When screen is less than 217 pixels, font will scale take away image*/
    margin: -1%;
    padding: 30px 0px;
-   height: 100px;
+   height: 190px;
    clear: left;
 }
 .footer {
@@ -84,11 +84,11 @@
 }
 
 .flex-item{
-    background-color: rgba(129, 128, 133, 0.904);
-    width: 350px;
+    background-color: rgba(219, 108, 80, 0.904);
+    width: 200px;
     height: auto;
     margin: 10px;
-    font-size: 18px;
+    font-size: 10px;
 }
 .main{ background: white; position:relative; top:5px}
 .column{ background: rgb(0, 63, 156);

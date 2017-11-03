@@ -1,0 +1,98 @@
+@import url('http://fonts.googleapis.com/css?family=Great+Vibes');
+* {
+    box-sizing: border-box;
+}
+ .header{
+     font-family: 'Great Vibes';
+     font-size: 550%;
+    color: black;
+    background-color: #0bbeeb;
+    text-align: center;
+    margin: -50px;
+    padding: 50px;
+    clear: left;
+    height: 170px;
+ }
+ 
+ .footer {
+    color: black;
+    background-color: #0bbeeb;
+    text-align: center;
+    clear: left;
+    height: 50px;
+}
+body {
+    font-family: Verdana;
+    background-color: #ffec97;
+}
+h1 {
+    text-align: center;
+    font-family: georgia;
+    font-size: 250%;
+    color: #21387c;
+}
+h2 {
+    text-align: center;
+    font-family: georgia;
+    font-size: 170%;
+    color:white;
+}
+.cartTotal{
+    text-align: center;
+    margin: auto;
+    width: 150px;
+    border: 3px solid #21387C;
+}
+fieldset {
+    margin: auto;
+    padding: 12px 20px;
+    background-color:#0da6cc;
+    width: 1000px;
+    border-radius: 25px;
+}
+input[type=text] {
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 3px solid #21387C;
+}
+textarea {
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 3px solid #21387C;
+    resize: none;
+}
+input.text {
+    width: 150px;
+}
+input[type=reset], input[type=submit]{
+    background-color: #21387c;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 170%;
+}
+table {
+    margin: auto;
+    padding: 12px 20px;
+    text-align: center;
+    border: 10px solid #21387C;
+    background-color: #0bbeeb;
+    border-style: double;
+    border-style: inset;
+}
+th, td {
+    margin: auto;
+    padding: 12px 20px;
+    text-align: center;
+    border-collapse: collapse;
+    border-bottom: 3px solid #21387C;
+}
+.error{
+    background-color: black;
+    color: red;
+}

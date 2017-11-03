@@ -1,0 +1,72 @@
+/* Mobile */
+.header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+   color: white;
+   background-color: rgba(161, 0, 0, 0.788);
+   text-align: center;
+   /* When screen is less than 217 pixels, font will scale take away image*/
+   margin: -1%;
+   padding: 30px 0px;
+   height: 190px;
+   clear: left;
+}
+.desktopImg{
+    display: none;
+}
+.footer {
+    color: white;
+    background-color: rgba(161, 0, 0, 0.788);
+    margin: -1%;
+    text-align: center;
+    clear: left;
+    height: 50px;
+ }
+ body {
+    font-family: Verdana;
+    color: white;
+    background-color: black;
+ }
+ h1 {
+    text-align: center;
+    font-family: georgia;
+    font-size: 250%;
+    color: rgba(16, 144, 255, 0.89);
+ }
+ .center {
+     text-align: center; 
+ }
+ p, h2, hr {
+     margin: 0% 6%;
+ }
+ .mobileImg {
+     display: inline;
+ }
+
+@media only screen and (min-width:535px){
+    /* Tablet */
+    .header{
+        font-size: 75px;
+        height: 227px;
+    }
+    .desktopImg{
+        display: none;
+    }
+    .mobileImg {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width:929px) {
+/* Desktop */
+.header{
+    font-size: 90px;
+    height: 150px;
+}
+.desktopImg {
+    display: inline;
+}
+.mobileImg {
+    display: none;
+}
+}
