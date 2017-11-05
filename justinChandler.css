@@ -94,6 +94,7 @@
 .column{ background: rgb(0, 63, 156);
     color: white; font-size: 14px;}
 
+
 @media all and (min-width:535px){
     /* Tablet */
     .column { flex: 1 0%; margin: 0% -1%; position:relative; top:7px;  }
