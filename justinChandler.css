@@ -90,7 +90,7 @@
     margin: 10px;
     font-size: 18px;
 }
-.main{ background: white; position:relative; top:5px}
+.main{ background: white; position:relative; top:5px; padding: 0px; }
 .column{ background: rgb(0, 63, 156);
     color: white; font-size: 14px;}
 
@@ -106,7 +106,7 @@
 .main { flex: 3 0px; }
 .column { order: 1;position:relative; top:15px; margin: 0% 0% 0% -1%;
     padding: 0% 0% 0% 2%; }
-.main { order: 2; position:relative; top:15px; margin: 0% -1% 0% 0%;}
+.main { order: 2; position:relative; top:15px; margin: 0% -1% 0% 0%; padding: 40px;}
 .footer { order: 3;position:relative; top:15px }
 .headerImg{
     width:310px
