@@ -26,7 +26,7 @@
         <div class="main">
     <br/>
     <div class="flex-container">
-        <div class="flex-item" style="order:1">
+        <div class="flex-item" id="item0" style="order:1">
             <h2> Classic Atari (Open GL in C++)</h2>
             <p>Designing these three games (Moon Lander, Skeet, and Asteroids) 
                 were projects from my Intro to Object Orienting class. The project 
@@ -35,7 +35,7 @@
                  <div class="center">
                      <img src="img/Moonlander.png" alt="Moon Lander Game"
                      style="width:100%; height:auto;min-width:134px">
-                     <a class="active" onclick="expandText('expanded1')" style="color:blue;cursor:pointer"><u>More...</u></a>
+                     <a class="active"  id="expanded1Link" onclick="expandText('expanded1')" style="color:blue;cursor:pointer;display:inline"><u>More...</u></a>
             </div>
             <div id="expanded1" style="display:none">
                  <div class="center">
@@ -47,9 +47,12 @@
                 <button type="button" style="font-size: 25px">Download ZIP File</button>
                     </a>
             </div>
-            </div>
+            <div class="center">
+            <a class="active" onclick="expandText('expanded1')" style="color:blue;cursor:pointer"><u>Less...</u></a>            
+            </div>    
         </div>
-        <div class="flex-item" style="order:2">
+        </div>
+        <div class="flex-item" id="item1" style="order:2">
                 <h2>Asteroids in Unity (C#)</h2>
                 <div class="center">
                         <img src="img/asteroidsUnity.PNG" alt="Asteroids in Unity Game"
@@ -61,7 +64,7 @@
                       a better understanding of programming game physics and handling
                        object collisions. It was also really fun to build.
                        <div class="center">
-                       <a class="active" onclick="expandText('expanded2')" style="color:blue;cursor:pointer"><u>More...</u></a>
+                       <a class="active" id="expanded2Link" onclick="expandText('expanded2')" style="color:blue;cursor:pointer;display:inline"><u>More...</u></a>
                        </div>
                        <div id="expanded2" style="display:none">                            
                        <br/><br/>
@@ -70,9 +73,13 @@
                         <li>Sprite Animation </li>
                         <li>The user can select their own controls to maneuver the spaceship. </li>
                          </p>
+                         <div class="center">
+                                <a class="active" onclick="expandText('expanded2')" style="color:blue;cursor:pointer"><u>Less...</u></a>            
+                                </div>    
+                    
         </div>
             </div>
-            <div class="flex-item" style="order:3">
+            <div class="flex-item" id="item2" style="order:3">
                     <h2> Data Structures</h2>
                     <p>For my Data Structures class, 
                         I worked with 3 other people
@@ -86,12 +93,12 @@
                             familiar with several collaboration 
                             tools.  </p>
                             <div class="center">
-                                <a class="active" href="STL Containers">
-                            <button type="button" style="font-size: 25px">View Files in Browser</button>
+                                <a class="active" href="STLContainers.zip">
+                            <button type="button" style="font-size: 25px">Download ZIP</button>
                             </div>
                         </a>
                 </div>
-                <div class="flex-item" style="order:4">
+                <div class="flex-item" id="item3" style="order:4">
                         <h2> Website Samples</h2>
                         <p>Below are a few website examples from my Web Development class.
                             Also, just in case you were wondering I built this website as 
@@ -114,7 +121,7 @@
                                 </a>
                             </div>
                     </div>
-                    <div class="flex-item" style="order:5">
+                    <div class="flex-item" id="item4" style="order:5">
                             <h2>Sudoku / Mad-Gab Console Games</h2>
                             <p>These two games were my introduction to programming. 
                                 They were fun to make and taught me C++. </p>
@@ -133,12 +140,12 @@
             <br/>
             <hr/>
             <br/>
-            <input type="radio" name="sortBy" value=""> by Featured <br/><br/>
-            <input type="radio" name="sortBy" value=""> by Date <br/><br/>
-            <input type="radio" name="sortBy" value=""> by Type <br/><br/>            
-            <select>
+            <input type="radio" name="sortBy" value="featured" onclick="sort()"> by Featured <br/><br/>
+            <input type="radio" name="sortBy" value="date" onclick="sort()"> by Date <br/><br/>
+            <input type="radio" name="sortBy" value="type" onclick="sort()"> by Type <br/><br/>            
+            <select id="type" disabled="disabled" onchange="sort()">
                 <option value="C++">C++</option>
-                <option value="C++">Web</option>                
+                <option value="Web">Web</option>                
             </select>
         </div>
     </div>
