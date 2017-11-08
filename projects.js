@@ -66,7 +66,7 @@ if (inputs[2].checked == true)
 }
 
 function fetchData() {
-    alert("HELLOOOOOOO");
+    document.alert("HELLOOOOOOO");
     var id = "projects";
     var url = "projects.txt";
     httpRequest = false;
