@@ -1,0 +1,43 @@
+{
+  "projects": [
+    {
+      "hidden": {
+        "date": "",
+        "rank": "0",
+        "type": "c++"
+      },
+      "visible": {
+        "title": "Classic Atari (Open GL in C++)",
+        "projectInfo": "",
+        "primaryImg": "img/Moonlander.png",
+        "description": "Designing these three games (Moon Lander, Skeet, and Asteroids) were projects from my Intro to Object Orienting class. The project was to build a basic working version of the game. I went above and beyond and added several fun extra features.",
+        "secondaryImg": [
+          "img/Asteroids.png",
+          "img/Skeet.PNG"
+        ],
+        "links": {
+          "reference": "AtariPack.zip",
+          "ribbon": "Download ZIP File"
+        }
+      }
+    },
+    {
+      "hidden": {
+        "date": "",
+        "rank": "1",
+        "type": "c#"
+      },
+      "visible": {
+        "title": "Asteroids in Unity (C#)",
+        "projectInfo": "I took what I learned from my Classic Atari game and gave it a major overhaul in Unity over the summer. In doing so I had the opportunity to learn C#. Building Asteroids in Unity gave me a better understanding of programming game physics and handling object collisions. It was also really fun to build.",
+        "primaryImg": "img/asteroidsUnity.PNG",
+        "description": "Improvements: Better physics. Sprite Animation. The user can select their own controls to maneuver the spaceship.",
+        "secondaryImg": "",
+        "links": {
+          "reference": "",
+          "ribbon": ""
+        }
+      }
+    }
+  ]
+}
