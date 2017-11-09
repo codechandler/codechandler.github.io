@@ -83,7 +83,7 @@ function fetchData() {
 
 function writeData(responseText, id) {
     var myObj = JSON.parse(responseText);
-    var displayText = "Testing...Testing 123";
+    var displayText = "";
     var text = [];
     for (i=0; i<myObj.projects.length; i++) {
         var date = myObj.projects[i].hidden.date;
@@ -95,13 +95,11 @@ function writeData(responseText, id) {
         var description = myObj.projects[i].visible.description;
         var secondaryImg = [];
         for (j=0; j<myObj.projects[i].visible.secondaryImg.length; i++) {
-            alert("hereppppppppppp");
             secondaryImg[j] = myObj.projects[i].visible.secondaryImg[j];
         }
         var reference = myObj.projects[i].visible.links.reference;
         var ribbon = myObj.projects[i].visible.links.ribbon;
-        alert(date + rank + type + title + projectInfo + primaryImg + description + reference + ribbon);
     }
-    displayText += "";
+    displayText += date + rank + type + title + projectInfo + primaryImg + description + reference + ribbon;
     document.getElementById("projects").innerHTML = displayText;
 }
