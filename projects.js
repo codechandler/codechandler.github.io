@@ -68,7 +68,7 @@ if (inputs[2].checked == true)
 function fetchData() {
     alert("HELLOOOOOOO");
     var id = "projects";
-    var url = "projects.txt";
+    var url = "https://codechandler.github.io/projects.txt";
     httpRequest = false;
     httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function() {
@@ -76,6 +76,7 @@ function fetchData() {
                 writeData(this.responseText, id);
         }
         else {
+            alert(this.readyState + this.status)
             alert("There was an error reaching the server");
         }
     };
