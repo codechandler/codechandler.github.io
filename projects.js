@@ -76,7 +76,6 @@ function fetchData() {
                 writeData(this.responseText, id);
         }
         else {
-            alert("ready-state=" + this.readyState + "status=" + this.status)
             alert("There was an error reaching the server");
         }
     };
@@ -85,10 +84,10 @@ function fetchData() {
 }
 
 function writeData(responseText, id) {
-    alert("hereppppppppppp");
     var myObj = JSON.parse(responseText);
     var displayText = "Testing...Testing 123";
     var text = [];
+    alert("hereppppppppppp");
     for (i=0; i<myObj.projects.length; i++) {
         var date = myObj.projects[i].hidden.date;
         var rank = myObj.projects[i].hidden.rank;
