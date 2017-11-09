@@ -94,7 +94,7 @@ function writeData(responseText, id) {
         var primaryImg = myObj.projects[i].visible.primaryImg;
         var description = myObj.projects[i].visible.description;
         var secondaryImg = [];
-        for (j=0; j<myObj.projects.visible.secondaryImg.length; i++) {
+        for (j=0; j<myObj.projects[i].visible.secondaryImg.length; i++) {
             alert("hereppppppppppp");
             secondaryImg[j] = myObj.projects[i].visible.secondaryImg[j];
         }
