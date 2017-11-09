@@ -86,7 +86,6 @@ function writeData(responseText, id) {
     var displayText = "Testing...Testing 123";
     var text = [];
     for (i=0; i<myObj.projects.length; i++) {
-        alert("hereppppppppppp");
         var date = myObj.projects[i].hidden.date;
         var rank = myObj.projects[i].hidden.rank;
         var type = myObj.projects[i].hidden.type;
@@ -96,12 +95,12 @@ function writeData(responseText, id) {
         var description = myObj.projects[i].visible.description;
         var secondaryImg = [];
         for (j=0; j<myObj.projects.visible.secondaryImg.length; i++) {
+            alert("hereppppppppppp");
             secondaryImg[j] = myObj.projects[i].visible.secondaryImg[j];
         }
         var reference = myObj.projects[i].visible.links.reference;
         var ribbon = myObj.projects[i].visible.links.ribbon;
         alert(date + rank + type + title + projectInfo + primaryImg + description + reference + ribbon);
-
     }
     displayText += "";
     document.getElementById("projects").innerHTML = displayText;
