@@ -99,7 +99,7 @@ function writeData(responseText, id) {
         }
         var reference = myObj.projects[i].visible.links.reference;
         var ribbon = myObj.projects[i].visible.links.ribbon;
+        displayText += date + rank + type + title + projectInfo + primaryImg + description + reference + ribbon;
     }
-    displayText += date + rank + type + title + projectInfo + primaryImg + description + reference + ribbon;
     document.getElementById("projects").innerHTML = displayText;
 }
