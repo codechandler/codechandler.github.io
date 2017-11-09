@@ -85,6 +85,7 @@ function fetchData() {
 }
 
 function writeData(responseText, id) {
+    alert("hereppppppppppp");
     var myObj = JSON.parse(responseText);
     var displayText = "Testing...Testing 123";
     var text = [];
