@@ -76,7 +76,7 @@ function fetchData() {
                 writeData(this.responseText, id);
         }
         else {
-            alert(this.readyState + this.status)
+            alert("ready-state=" + this.readyState + "status=" + this.status)
             alert("There was an error reaching the server");
         }
     };
