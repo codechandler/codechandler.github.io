@@ -100,12 +100,13 @@ function writeData(responseText, id) {
         var reference = myObj.projects[i].visible.links.reference;
         var ribbon = myObj.projects[i].visible.links.ribbon;
         
-        displayText += rank + "\" style=\"order:\"" + Number(rank) + 1 + "\"> <h2>" + title + "</h2> <p>" + projectInfo + "</p> <div class=\"center\"> <img scr=\"" + primaryImg +  " alt=\"\" style=\"width:100%; height:auto\"> <a class=\"active\" id=\"expanded1Link\" onclick=\"expandedText('expanded1')\" style=\"color:blue;cursor:pointer;display:inline\"><u>More...</u></a></div><div id=\"id=\"expanded1\" style=\"display:none\"><div class=\"center\">";
+        displayText += rank + "\" style=\"order:\"" + Number(rank) + 1 + "\"> <h2>" + title + "</h2> <p>" + projectInfo + "</p> <div class=\"center\"> <img scr=\"" + primaryImg + " alt=\"\" style=\"width:100%; height:auto\"> <a class=\"active\" id=\"expanded1Link\" onclick=\"expandedText('expanded1')\" style=\"color:blue;cursor:pointer;display:inline\"><u>More...</u></a></div><div id=\"id=\"expanded1\" style=\"display:none\"><div class=\"center\">";
         for (k=0; k<secondaryImg.length; k++){
             displayText += "<img src=\"" + secondaryImg[k] + "alt=\"\" style=\"width:100%; height:auto\">";
         }  
         displayText += "<a class=\"active\" href=\"" + reference + "\"> <button type=\"button\" style=\"font-size:25px\">" + ribbon + "</button> </a> </div> <div class=\"active\" onclick=\"expandedText('expanded1')\" style=\"color:blue;cursor:pointer\"><u>Less...</u></a> </div> </div> </div>"; 
         //displayText += date + rank + type + title + projectInfo + primaryImg + description + reference + ribbon;
     }
+    alert(displayText);
     document.getElementById("projects").innerHTML = displayText;
 }
