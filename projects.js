@@ -66,7 +66,6 @@ if (inputs[2].checked == true)
 }
 
 function fetchData() {
-    alert("HELLOOOOOOO");
     var id = "projects";
     var url = "https://codechandler.github.io/projects.txt";
     httpRequest = false;
@@ -76,7 +75,6 @@ function fetchData() {
                 writeData(this.responseText, id);
         }
         else {
-            alert("There was an error reaching the server");
         }
     };
     httpRequest.open("GET", url, true);
@@ -87,8 +85,8 @@ function writeData(responseText, id) {
     var myObj = JSON.parse(responseText);
     var displayText = "Testing...Testing 123";
     var text = [];
-    alert("hereppppppppppp");
     for (i=0; i<myObj.projects.length; i++) {
+        alert("hereppppppppppp");
         var date = myObj.projects[i].hidden.date;
         var rank = myObj.projects[i].hidden.rank;
         var type = myObj.projects[i].hidden.type;
