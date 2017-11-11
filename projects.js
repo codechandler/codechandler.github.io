@@ -106,7 +106,7 @@ function writeData(responseText, id) {
         for (k=0; k<secondaryImg.length; k++){
             displayText += "<img src=\"" + secondaryImg[k] + "\" alt=\"\" style=\"width:100%; height:auto\">";
         }  
-        displayText += "<a class=\"active\" href=\"" + reference + "\"> <button type=\"button\" style=\"font-size:25px\">" + ribbon + "</button> </a> </div> <div class=\"active\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer\"><u>Less...</u></a> </div> </div> </div>"; 
+        displayText += "<a class=\"active\" href=\"" + reference + "\"> <button type=\"button\" style=\"font-size:25px\">" + ribbon + "</button> </a> </div> <div class=\"center\"> <div class=\"active\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer\"><u>Less...</u></a> </div> </div> </div>"; 
         //displayText += date + rank + type + title + projectInfo + primaryImg + description + reference + ribbon;
     }
     alert(displayText);
