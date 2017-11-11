@@ -182,27 +182,24 @@
             <br/>
             <br>
         </div>
-        <div class="column">
+        <div class="topBar">
             <h2>Sort Projects</h2>
-            <br/>
             <hr/>
             <br/>
+            <div class="center">
             <input type="radio" name="sortBy" value="featured"
             onclick="sort()"> by Featured
-            <br/>
-            <br/>
+            &emsp;
             <input type="radio" name="sortBy" value="date"
             onclick="sort()"> by Date
-            <br/>
-            <br/>
+            &emsp;
             <input type="radio" name="sortBy" value="type"
             onclick="sort()"> by Type
-            <br/>
-            <br/>
             <select id="type" disabled="disabled" onchange="sort()">
                 <option value="C++">C++</option>
                 <option value="Web">Web</option>
             </select>
+            </div>
         </div>
     </div>
     <div class="footer">
