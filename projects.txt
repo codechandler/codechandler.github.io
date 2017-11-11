@@ -8,9 +8,9 @@
       },
       "visible": {
         "title": "Classic Atari (Open GL in C++)",
-        "projectInfo": "",
+        "projectInfo": "Designing these three games (Moon Lander, Skeet, and Asteroids) were projects from my Intro to Object Orienting class. The project was to build a basic working version of the game. I went above and beyond and added several fun extra features.",
         "primaryImg": "img/Moonlander.png",
-        "description": "Designing these three games (Moon Lander, Skeet, and Asteroids) were projects from my Intro to Object Orienting class. The project was to build a basic working version of the game. I went above and beyond and added several fun extra features.",
+        "description": "",
         "secondaryImg": [
           "img/Asteroids.png",
           "img/Skeet.PNG"
@@ -36,6 +36,105 @@
         "links": {
           "reference": "",
           "ribbon": ""
+        }
+      }
+    },
+        {
+      "hidden": {
+        "date": "",
+        "rank": "2",
+        "type": "c++"
+      },
+      "visible": {
+        "title": "Data Structures",
+        "projectInfo": "For my Data Structures
+                        class, I worked with
+                        3 other people to
+                        build a Stack, Queue,
+                        Deque, Set, Node,
+                        List, Binary Tree,
+                        BST, Map, various
+                        Sort Methods, Hash
+                        and Graph. I collaborated
+                        with online students
+                        across the US through
+                        which I strengthened
+                        my leadership skills
+                        and became familiar
+                        with several collaboration
+                        tools.",
+        "primaryImg": "",
+        "description": "",
+        "secondaryImg": [
+        ],
+        "links": {
+          "reference": "STLContainers.zip",
+          "ribbon": "Download ZIP File"
+        }
+      }
+    },
+    {
+      "hidden": {
+        "date": "",
+        "rank": "3",
+        "type": "web"
+      },
+      "visible": {
+        "title": "Website Samples",
+        "projectInfo": "Designing these three games (Moon Lander, Skeet, and Asteroids) were projects from my Intro to Object Orienting class. The project was to build a basic working version of the game. I went above and beyond and added several fun extra features.",
+        "primaryImg": "img/Moonlander.png",
+        "description": "Below are a few website
+                        examples from my
+                        Web Development class.
+                        Also, just in case
+                        you were wondering
+                        I built this website
+                        as another personal
+                        project.",
+        "secondaryImg": [
+        ],
+        "links": [ 
+          {
+          "reference": "website-samples/assign03.html",
+          "ribbon": "Sample 1"
+          },
+                    {
+          "reference": "website-samples/assign04.html",
+          "ribbon": "Sample 2"
+          },
+                    {
+          "reference": "website-samples/assign05.html",
+          "ribbon": "Sample 3"
+          },
+                    {
+          "reference": "website-samples/assign06.html",
+          "ribbon": "Sample 4"
+          },
+                    {
+          "reference": "website-samples/assign07.html",
+          "ribbon": "Sample 5"
+          },
+        ]
+      }
+    },
+        {
+      "hidden": {
+        "date": "",
+        "rank": "4",
+        "type": "c++"
+      },
+      "visible": {
+        "title": "Sudoku / Mad-Gab Console Games",
+        "projectInfo": "These two games were
+                        my introduction to
+                        programming. They
+                        were fun to make
+                        and taught me C++.",
+        "primaryImg": "img/Sudoku.PNG",
+        "description": "",
+        "secondaryImg": [
+        ],
+        "links": {
         }
       }
     }
