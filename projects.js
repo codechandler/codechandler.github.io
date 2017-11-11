@@ -113,7 +113,7 @@ function writeData(responseText, id) {
         }  
 
         for(m=0; m<reference.length; m++)
-        displayText += "<a class=\"active\" href=\"" + reference[m] + "\"> <button type=\"button\" style=\"font-size:25px\">" + ribbon[m] + "</button> </a> </div>  
+        displayText += "<a class=\"active\" href=\"" + reference[m] + "\"> <button type=\"button\" style=\"font-size:25px\">" + ribbon[m] + "</button> </a> </div>";  
         displayText += "<div class=\"center\"> <div class=\"active\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer\"><u>Less...</u></a> </div> </div> </div> </div>";
         //displayText += date + rank + type + title + projectInfo + primaryImg + description + reference + ribbon;
     }
