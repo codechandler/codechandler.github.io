@@ -95,7 +95,7 @@
     margin: 1px;
     font-size: 18px;
 }
-.main{ order: 1;background: white; position:relative; top:0px; padding: 0px; width: 100%;}
+.main{ order: 1;background: rgba(255, 255, 255, 0); position:relative; top:0px; padding: 0px; width: 100%;}
 .column{ order: 0;background: rgb(0, 19, 128);
     color: white; font-size: 14px; width: 100%; margin: 0% -1% 0% -1%;}
 .topBar { order: 0;background: rgb(0, 19, 128);
@@ -115,11 +115,11 @@
 @media all and (min-width:929px) {
 /* Desktop */
 .main { flex: 3 0px; }
-.column { order: 1;position:relative; top:15px; margin: 0% 0% 0% -1%;
-    padding: 0% 0% 0% 2%; }
+.column { order: 1; margin: 0% 0% -1% -1%;
+    padding: 0% 0% 0% 2%; text-align: left }
 .topBar { flex:0 0 auto; width:100%;position:relative; top:15px; margin: 0% 0% 0% -1%;
     padding: 0% 0% 0% 2%}
-.main { order: 2; position:relative; top:15px; margin: 0% -1% 0% 0%; padding: 40px;}
+.main { order: 2; margin: 1% -1% 0% 0%; padding: 40px;}
 .footer { order: 3;position:relative; top:15px }
 .headerImg{
     width:310px
