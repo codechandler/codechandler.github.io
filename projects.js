@@ -113,7 +113,7 @@ function writeData(responseText, id) {
         displayText += "</div> <a class=\"active\" id=\"expanded" + order + "Link\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer;display:inline\"><u>More...</u></a></div><div id=\"expanded" + order + "\" style=\"display:none\"> <p style=\"font-family:ariel\">" + "&emsp;&emsp;" + description + "</p> <div class=\"center\">"; 
         for (k=0; k<secondaryImg.length; k++){
             displayText += "<img src=\"" + secondaryImg[k] + "\" alt=\"\" style=\"width:100%; height:auto\">";
-        }  
+        } 
 
         displayText += "</div> <div class=\"center\"> <a> <div class=\"active\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer\"><u>Less...</u></a> </div> </div> </div> </div>";
     }
