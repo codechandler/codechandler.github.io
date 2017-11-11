@@ -107,7 +107,7 @@ function writeData(responseText, id) {
         }
 
         var order = Number(rank) + 1; 
-        displayText += rank + "\" style=\"order:" + order + "\"> <h2>" + title + "</h2> <p>" + projectInfo + "</p> <div class=\"center\"> <img src=\"" + primaryImg + "\" alt=\"\" style=\"width:100%; height:auto\"> <a class=\"active\" id=\"expanded" + order + "Link\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer;display:inline\"><u>More...</u></a></div><div id=\"expanded" + order + "\" style=\"display:none\"><div class=\"center\">";
+        displayText += rank + "\" style=\"order:" + order + "\"> <h2>" + title + "</h2> <p>" + projectInfo + "</p> <div class=\"center\"> <img src=\"" + primaryImg + "\" alt=\"\" style=\"width:100%; height:auto\"> <a class=\"active\" id=\"expanded" + order + "Link\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer;display:inline\"><u>More...</u></a></div><div id=\"expanded" + order + "\" style=\"display:none\"> <p>" + description + "</p> <div class=\"center\">";
         for (k=0; k<secondaryImg.length; k++){
             displayText += "<img src=\"" + secondaryImg[k] + "\" alt=\"\" style=\"width:100%; height:auto\">";
         }  
