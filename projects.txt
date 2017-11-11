@@ -33,10 +33,12 @@
             "primaryImg":"img/asteroidsUnity.PNG",
             "description":"Improvements: Better physics. Sprite Animation. The user can select their own controls to maneuver the spaceship.",
             "secondaryImg":"",
-            "links":{
+            "links":[
+              {
                "reference":"",
                "ribbon":""
-            }
+              }
+            ]
          }
       },
       {
@@ -53,10 +55,12 @@
             "secondaryImg":[
 
             ],
-            "links":{
+            "links": [
+            {
                "reference":"STLContainers.zip",
                "ribbon":"Download ZIP File"
             }
+            ]
          }
       },
       {
@@ -111,9 +115,7 @@
             "secondaryImg":[
 
             ],
-            "links":{
-
-            }
+            "links":""
          }
       }
    ]
