@@ -15,10 +15,12 @@
                "img/Asteroids.png",
                "img/Skeet.PNG"
             ],
-            "links":{
+            "links":[
+              {
                "reference":"AtariPack.zip",
                "ribbon":"Download ZIP File"
-            }
+              }
+            ]
          }
       },
       {
@@ -33,12 +35,7 @@
             "primaryImg":"img/asteroidsUnity.PNG",
             "description":"Improvements: Better physics. Sprite Animation. The user can select their own controls to maneuver the spaceship.",
             "secondaryImg":"",
-            "links":[
-              {
-               "reference":"",
-               "ribbon":""
-              }
-            ]
+            "links":"",
          }
       },
       {

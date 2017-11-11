@@ -101,7 +101,7 @@ function writeData(responseText, id) {
         var reference = [];
         var ribbon = [];
         
-        for (l=0; l<myObj.projects[i].visible.links.reference.length; l++) {
+        for (l=0; l<myObj.projects[i].visible.links.length; l++) {
         myObj.projects[i].visible.links.reference[l];
         myObj.projects[i].visible.links.ribbon[l];
         }
