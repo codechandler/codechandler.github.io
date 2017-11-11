@@ -109,6 +109,6 @@ function writeData(responseText, id) {
         displayText += "<a class=\"active\" href=\"" + reference + "\"> <button type=\"button\" style=\"font-size:25px\">" + ribbon + "</button> </a> </div> <div class=\"center\"> <div class=\"active\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer\"><u>Less...</u></a> </div> </div> </div>"; 
         //displayText += date + rank + type + title + projectInfo + primaryImg + description + reference + ribbon;
     }
-    alert(displayText);
+    console.log(displayText);
     document.getElementById("projects").innerHTML = displayText;
 }
