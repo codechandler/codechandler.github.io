@@ -98,15 +98,23 @@ function writeData(responseText, id) {
         for (j=0; j<myObj.projects[i].visible.secondaryImg.length; j++) {
             secondaryImg[j] = myObj.projects[i].visible.secondaryImg[j];
         }
-        var reference = myObj.projects[i].visible.links.reference;
-        var ribbon = myObj.projects[i].visible.links.ribbon;
+        var reference = [];
+        var ribbon = [];
         
+        for (l=0; l<myObj.projects[i].visible.links.reference.length; l++) {
+        myObj.projects[i].visible.links.reference[l];
+        myObj.projects[i].visible.links.ribbon[l];
+        }
+
         var order = Number(rank) + 1; 
         displayText += rank + "\" style=\"order:" + order + "\"> <h2>" + title + "</h2> <p>" + projectInfo + "</p> <div class=\"center\"> <img src=\"" + primaryImg + "\" alt=\"\" style=\"width:100%; height:auto\"> <a class=\"active\" id=\"expanded" + order + "Link\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer;display:inline\"><u>More...</u></a></div><div id=\"expanded" + order + "\" style=\"display:none\"><div class=\"center\">";
         for (k=0; k<secondaryImg.length; k++){
             displayText += "<img src=\"" + secondaryImg[k] + "\" alt=\"\" style=\"width:100%; height:auto\">";
         }  
-        displayText += "<a class=\"active\" href=\"" + reference + "\"> <button type=\"button\" style=\"font-size:25px\">" + ribbon + "</button> </a> </div> <div class=\"center\"> <div class=\"active\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer\"><u>Less...</u></a> </div> </div> </div> </div>"; 
+
+        for(m=0; m<reference.length; m++)
+        displayText += "<a class=\"active\" href=\"" + reference[m] + "\"> <button type=\"button\" style=\"font-size:25px\">" + ribbon[m] + "</button> </a> </div>  
+        displayText += "<div class=\"center\"> <div class=\"active\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer\"><u>Less...</u></a> </div> </div> </div> </div>";
         //displayText += date + rank + type + title + projectInfo + primaryImg + description + reference + ribbon;
     }
     console.log(displayText);
