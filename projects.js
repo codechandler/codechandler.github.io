@@ -82,7 +82,7 @@ function fetchData() {
 }
 
 function writeData(responseText, id) {
-/*     var myObj = JSON.parse(responseText);
+    var myObj = JSON.parse(responseText);
     var displayText = "";
     var text = [];
     for (i=0; i<myObj.projects.length; i++) {
@@ -115,7 +115,7 @@ function writeData(responseText, id) {
         for(m=0; m<reference.length; m++)
         displayText += "<a class=\"active\" href=\"" + reference[m] + "\"> <button type=\"button\" style=\"font-size:25px\">" + ribbon[m] + "</button>  </a> " 
         displayText += "</div> <div class=\"center\"> <a> <div class=\"active\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer\"><u>Less...</u></a> </div> </div> </div> </div>";
- */    }
+    }
     console.log(displayText);
     document.getElementById("projects").innerHTML = displayText;
 }
