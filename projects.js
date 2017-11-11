@@ -102,11 +102,11 @@ function writeData(responseText, id) {
         var ribbon = myObj.projects[i].visible.links.ribbon;
         
         var order = Number(rank) + 1; 
-        displayText += rank + "\" style=\"order:" + order + "\"> <h2>" + title + "</h2> <p>" + projectInfo + "</p> <div class=\"center\"> <img src=\"" + primaryImg + "\" alt=\"\" style=\"width:100%; height:auto\"> <a class=\"active\" id=\"expanded" + order + "Link\" onclick=\"expandedText('expanded" + order + "')\" style=\"color:blue;cursor:pointer;display:inline\"><u>More...</u></a></div><div id=\"expanded" + order + "\" style=\"display:none\"><div class=\"center\">";
+        displayText += rank + "\" style=\"order:" + order + "\"> <h2>" + title + "</h2> <p>" + projectInfo + "</p> <div class=\"center\"> <img src=\"" + primaryImg + "\" alt=\"\" style=\"width:100%; height:auto\"> <a class=\"active\" id=\"expanded" + order + "Link\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer;display:inline\"><u>More...</u></a></div><div id=\"expanded" + order + "\" style=\"display:none\"><div class=\"center\">";
         for (k=0; k<secondaryImg.length; k++){
             displayText += "<img src=\"" + secondaryImg[k] + "\" alt=\"\" style=\"width:100%; height:auto\">";
         }  
-        displayText += "<a class=\"active\" href=\"" + reference + "\"> <button type=\"button\" style=\"font-size:25px\">" + ribbon + "</button> </a> </div> <div class=\"active\" onclick=\"expandedText('expanded" + order + "')\" style=\"color:blue;cursor:pointer\"><u>Less...</u></a> </div> </div> </div>"; 
+        displayText += "<a class=\"active\" href=\"" + reference + "\"> <button type=\"button\" style=\"font-size:25px\">" + ribbon + "</button> </a> </div> <div class=\"active\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer\"><u>Less...</u></a> </div> </div> </div>"; 
         //displayText += date + rank + type + title + projectInfo + primaryImg + description + reference + ribbon;
     }
     alert(displayText);
