@@ -12,18 +12,18 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
    color: black;
-   background-color: rgb(0, 102, 255);
+   background-color:  rgba(0, 65, 156, 0.75);
    text-align: center;
    /* When screen is less than 217 pixels, font will scale take away image*/
    margin: -1% -1% 0% -1%;
    padding: 30px 0px;
-   height: 100px;
+   height: 70px;
    width: 102%;
    clear: left;
 }
 .footer {
     color: white;
-    background-color: rgb(0, 102, 255);
+    background-color:  rgba(0, 65, 156, 0.75);
     margin: -1%;
     text-align: center;
     clear: left;
