@@ -68,9 +68,9 @@
          },
          "visible":{
             "title":"Website Samples",
-            "projectInfo":"Designing these three games (Moon Lander, Skeet, and Asteroids) were projects from my Intro to Object Orienting class. The project was to build a basic working version of the game. I went above and beyond and added several fun extra features.",
+            "projectInfo":"Below are a few website examples from my Web Development class. Also, just in case you were wondering I built this website as another personal project.",
             "primaryImg":"",
-            "description":"Above are a few website examples from my Web Development class. Also, just in case you were wondering I built this website as another personal project.",
+            "description":"",
             "secondaryImg":[
 
             ],
