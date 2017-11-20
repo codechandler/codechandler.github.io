@@ -110,12 +110,16 @@ function writeData(responseText, id) {
         displayText += rank + "\" style=\"order:" + order + "\"> <h2>" + title + "</h2> <p style=\"font-family:ariel\">" + "&emsp;&emsp;" + projectInfo + "</p> <div class=\"center\"> <img src=\"" + primaryImg + "\" alt=\"\" style=\"width:100%; height:auto\"> <div class=\"center\">";
         for(m=0; m<reference.length; m++)
         displayText += "<a class=\"active\" href=\"" + reference[m] + "\"> <button type=\"button\" class=\"button\" style=\"font-size:15px\">" + ribbon[m] + "</button>  </a> ";
+        if (description != '' || secondaryImg.length != 0){
         displayText += "</div> <a class=\"active\" id=\"expanded" + order + "Link\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer;display:inline\"><u>More...</u></a></div><div id=\"expanded" + order + "\" style=\"display:none\"> <p style=\"font-family:ariel\">" + "&emsp;&emsp;" + description + "</p> <div class=\"center\">"; 
         for (k=0; k<secondaryImg.length; k++){
             displayText += "<img src=\"" + secondaryImg[k] + "\" alt=\"\" style=\"width:100%; height:auto\">";
         } 
-
         displayText += "</div> <div class=\"center\"> <a> <div class=\"active\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer\"><u>Less...</u></a> </div> </div> </div> </div>";
+    }
+        else {
+            displayText += "</div> </div> </div> </div>";
+        }
     }
     console.log(displayText);
     document.getElementById("projects").innerHTML = displayText;
