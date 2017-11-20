@@ -23,6 +23,7 @@ function expandText (id) {
 
 function sort () {
 var inputs = document.querySelectorAll("input[name='sortBy']");
+// Sort by Featured
 if (inputs[0].checked == true)
 {
     document.getElementById("type").disabled = true;    
@@ -32,6 +33,7 @@ document.getElementById("item2").style.order = 3;
 document.getElementById("item3").style.order = 4;
 document.getElementById("item4").style.order = 5;
 }
+// Sort by Date (Newest First)
 if (inputs[1].checked == true)
 {
     document.getElementById("type").disabled = true;    
@@ -41,9 +43,11 @@ document.getElementById("item2").style.order = 2;
 document.getElementById("item3").style.order = 1;
 document.getElementById("item4").style.order = 5;
 }
+// Sort by Type
 if (inputs[2].checked == true)
 {
     document.getElementById("type").disabled = false;
+    // Sort by C++
     if (document.getElementById("type").selectedIndex == "0")
     {
         document.getElementById("item0").style.order = 1;
@@ -53,6 +57,7 @@ if (inputs[2].checked == true)
         document.getElementById("item1").style.order = 4;
         document.getElementById("item3").style.order = 5;        
     }
+    // Sort by Web
     if (document.getElementById("type").selectedIndex == "1")
     {
         document.getElementById("item3").style.order = 1;
