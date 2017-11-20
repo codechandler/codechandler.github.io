@@ -109,7 +109,7 @@ function writeData(responseText, id) {
         var order = Number(rank) + 1; 
         displayText += rank + "\" style=\"order:" + order + "\"> <h2>" + title + "</h2> <p style=\"font-family:ariel\">" + "&emsp;&emsp;" + projectInfo + "</p> <div class=\"center\"> <img src=\"" + primaryImg + "\" alt=\"\" style=\"width:100%; height:auto\"> <div class=\"center\">";
         for(m=0; m<reference.length; m++)
-        displayText += "<a class=\"active\" href=\"" + reference[m] + "\"> <button type=\"button\" style=\"font-size:25px\">" + ribbon[m] + "</button>  </a> ";
+        displayText += "<a class=\"active\" href=\"" + reference[m] + "\"> <button type=\"button\" class=\"button\" style=\"font-size:15px\">" + ribbon[m] + "</button>  </a> ";
         displayText += "</div> <a class=\"active\" id=\"expanded" + order + "Link\" onclick=\"expandText('expanded" + order + "')\" style=\"color:blue;cursor:pointer;display:inline\"><u>More...</u></a></div><div id=\"expanded" + order + "\" style=\"display:none\"> <p style=\"font-family:ariel\">" + "&emsp;&emsp;" + description + "</p> <div class=\"center\">"; 
         for (k=0; k<secondaryImg.length; k++){
             displayText += "<img src=\"" + secondaryImg[k] + "\" alt=\"\" style=\"width:100%; height:auto\">";
