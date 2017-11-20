@@ -8,9 +8,9 @@
          },
          "visible":{
             "title":"Classic Atari (Open GL in C++)",
-            "projectInfo":"Designing these three games (Moon Lander, Skeet, and Asteroids) were projects from my Intro to Object Orienting class. The project was to build a basic working version of the game. I went above and beyond and added several fun extra features.",
+            "projectInfo":"I built the Moon lander, Skeet, and Asteroids Classic Atari games for CS165- Intro to Object-Oriented Programming. I learned core Object Oriented topics like abstraction, aggregation, inheritance, and polymorphism. I learned class relationships (is-a, has-a). ",
             "primaryImg":"img/Moonlander.png",
-            "description":"",
+            "description":"I went above and beyond the Classic Atari versions which were required in class and added some fun bonus features. Try it out!",
             "secondaryImg":[
                "img/Asteroids.png",
                "img/Skeet.PNG"
@@ -31,9 +31,9 @@
          },
          "visible":{
             "title":"Asteroids in Unity (C#)",
-            "projectInfo":"I took what I learned from my Classic Atari game and gave it a major overhaul in Unity over the summer. In doing so I had the opportunity to learn C#. Building Asteroids in Unity gave me a better understanding of programming game physics and handling object collisions. It was also really fun to build.",
+            "projectInfo":"I upgraded Asteroids from my Object-Oriented class over the summer (6 weeks) in Unity. I had to familiarize myself with the Unity Engine and learn C#. I developed the skills required to build a fun game with real world physics. The biggest challenge was handling object collisions. This was a really fun project.",
             "primaryImg":"img/asteroidsUnity.PNG",
-            "description":"Improvements: Better physics. Sprite Animation. The user can select their own controls to maneuver the spaceship.",
+            "description":"I learned about sprite rendering, object collision, the Unity physics engine, and game UI and score keeping. ",
             "secondaryImg":"",
             "links":""
          }
@@ -46,7 +46,7 @@
          },
          "visible":{
             "title":"Data Structures",
-            "projectInfo":"For my Data Structures class, I worked with 3 other people to build a Stack, Queue, Deque, Set, Node, List, Binary Tree, BST, Map, various Sort Methods, Hash and Graph. I collaborated with online students across the US through which I strengthened my leadership skills and became familiar with several collaboration tools.",
+            "projectInfo":"For my Data Structures class, I worked with 3 other people to build a Stack, Queue, Deque, Set, Node, List, Binary Tree, BST, Map, various Sort Methods, Hash and Graph. I collaborated with online students across the US through which I strengthened my leadership skills. We collaborated over video conference, and shared code with GitHub.",
             "primaryImg":"",
             "description":"",
             "secondaryImg":[
@@ -68,7 +68,7 @@
          },
          "visible":{
             "title":"Website Samples",
-            "projectInfo":"Below are a few website examples from my Web Development class. Also, just in case you were wondering I built this website as another personal project.",
+            "projectInfo":"For my web-development class I learned HTTP, XHTML, HTML 5, CSS, JavaScript, XML, XSL/XSLT, DTD's and Schema's; effective web site design; dynamic web pages using AJAX technology; an introduction to server-side programming and forms processing using PHP. Several of these skills were used to build this website, and more samples are found below.",
             "primaryImg":"",
             "description":"",
             "secondaryImg":[
@@ -106,7 +106,7 @@
          },
          "visible":{
             "title":"Sudoku / Mad-Gab Console Games",
-            "projectInfo":"These two games were my introduction to programming. They were fun to make and taught me C++.",
+            "projectInfo":"I built these two games for my Introduction to Computer Programming class CS124. Throughout the class I learned the ins and outs of C++, and used these skills to solve complex programming challenges. I loved this class and building these games was a blast.",
             "primaryImg":"img/Sudoku.PNG",
             "description":"",
             "secondaryImg":[
