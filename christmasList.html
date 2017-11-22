@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Family Christmas List</title>  
+    <style type="text/css">
+               table {
+            width: 50%;
+            margin: auto;
+        }
+        table,
+        th,
+        td {
+            border: 1px solid rgb(8, 4, 194);
+            border-collapse: collapse;
+        }
+        td {
+            font-family: verdana;
+        }
+        th {
+            font-family: georgia;
+        }
+        #t01 tr:nth-child(even) {
+            background-color:  rgba(214, 0, 0, 0.986);
+        }
+        #t01 tr:nth-child(odd) {
+            background-color: rgba(177, 174, 174, 0.877);
+        }
+        #t01 th {
+            background-color: rgb(19, 160, 6);
+            color: white;
+        }
+        #t01 tr:hover {
+            color: white;
+            background-color: black;
+        }
+        .center {
+            text-align: center;
+        }
+   </style>
+    <script>
+        function drawNames() {
+            var rand;
+            keyArray = ["David","Angela","Joshua","Daniela","Justin","Jeremy","Amy","Kate"];
+            valueArray = ["Daniela","Jeremy","Kate","David","Angela","Joshua","Amy","Justin"];
+            var person = [];
+            var displayText;
+            for (var i = 0; i <= 7; i++) {
+                console.log("i=");
+                console.log(i);
+                rand1 = Math.floor((Math.random() * (8 - i)));
+                rand2 = Math.floor((Math.random() * (8 - i)));
+                // make sure rand1 and rand2 are not the same IE. Joshua can not shop for Joshua
+                if (i != 7)
+                while (keyArray[rand1]==valueArray[rand2])
+                rand2 = Math.floor((Math.random() * (8 - i)));
+                console.log("rand1=THENrand2=");
+                console.log(rand1);
+                console.log(rand2);
+                // assign names
+                person[keyArray[rand1]] = valueArray[rand2];
+                console.log(person);
+                // use splice method to remove item from array
+                keyArray.splice(rand1,1);
+                valueArray.splice(rand2,1);   
+            }
+            //displayText = person["David"] + person["Angela"] + person["Joshua"] + person["Daniela"] + person["Justin"] + person["Jeremy"] + person["Amy"] + person["Kate"];
+                displayText = "<table id=\"t01\"> <tr> <th> Gifter </th> <th> Recipient </th> <th> Wish List </th> </tr>";
+                displayText += "<tr> <td> David </td> <td>" + person["David"] + "</td> <td> </td> </tr>";
+                displayText += "<tr> <td> Angela </td> <td>" + person["Angela"] + "</td> <td> </td> </tr>";
+                displayText += "<tr> <td> Joshua </td> <td>" + person["Joshua"] + "</td> <td> </td> </tr>";
+                displayText += "<tr> <td> Daniela </td> <td>" + person["Daniela"] + "</td> <td> </td> </tr>";
+                displayText += "<tr> <td> Justin </td> <td>" + person["Justin"] + "</td>  <td>  <a class=\"active\" href=\"https://goo.gl/eUCYnd\"> Click Here!! </a> </td> </tr>";
+                displayText += "<tr> <td> Jeremy </td> <td>" + person["Jeremy"] + "</td> <td> </td> </tr>";
+                displayText += "<tr> <td> Amy </td> <td>" + person["Amy"] + "</td> <td> </td> </tr>";
+                displayText += "<tr> <td> Kate </td> <td>" + person["Kate"] + "</td> <td> </td> </tr>";
+                displayText += "</table>";
+                
+                
+                document.getElementById("nameChart").innerHTML = displayText;
+                
+            }
+            </script>
+</head>
+<body>
+    
+    <div class="center">
+            <h1>Chandler Christmas List</h1>
+        <button type="button" onclick="drawNames()">Draw Names &#8681; </button>
+        <p id="nameChart"></p>
+    </div>
+
+
+
+</body>
+</html>
