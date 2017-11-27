@@ -1,0 +1,119 @@
+{
+   "projects":[
+      {
+         "hidden":{
+            "date":"",
+            "rank":"0",
+            "type":"c++"
+         },
+         "visible":{
+            "title":"Classic Atari (Open GL in C++)",
+            "projectInfo":"Author:Justin Chandler Date:3/17",
+            "primaryImg":"img/Moonlander.png",
+            "description":"I built the Moon lander, Skeet, and Asteroids Classic Atari games for CS165- Intro to Object-Oriented Programming. I learned core Object Oriented topics like abstraction, aggregation, inheritance, and polymorphism. I learned class relationships (is-a, has-a). I went above and beyond the Classic Atari versions which were required in class and added some fun bonus features. Try it out!",
+            "secondaryImg":[
+               "img/Asteroids.png",
+               "img/Skeet.PNG"
+            ],
+            "links":[
+              {
+               "reference":"https://github.com/codechandler/codechandler.github.io/releases/download/v1.0/AtariPack.zip",
+               "ribbon":"Download ZIP File"
+              }
+            ]
+         }
+      },
+      {
+         "hidden":{
+            "date":"",
+            "rank":"1",
+            "type":"c#"
+         },
+         "visible":{
+            "title":"Asteroids in Unity (C#)",
+            "projectInfo":"Author:Scott Madeux Date:7/17",
+            "primaryImg":"img/asteroidsUnity.PNG",
+            "description":"I upgraded Asteroids from my Object-Oriented class over the summer (6 weeks) in Unity. I had to familiarize myself with the Unity Engine and learn C#. I developed the skills required to build a fun game with real world physics. The biggest challenge was handling object collisions. This was a really fun project. I learned about sprite rendering, object collision, the Unity physics engine, and game UI and score keeping. ",
+            "secondaryImg":"",
+            "links":""
+         }
+      },
+      {
+         "hidden":{
+            "date":"",
+            "rank":"2",
+            "type":"c++"
+         },
+         "visible":{
+            "title":"Data Structures",
+            "projectInfo":"Author:John Doe Date:12/15",
+            "primaryImg":"",
+            "description":"For my Data Structures class, I worked with 3 other people to build a Stack, Queue, Deque, Set, Node, List, Binary Tree, BST, Map, various Sort Methods, Hash and Graph. I collaborated with online students across the US through which I strengthened my leadership skills. We collaborated over video conference, and shared code with GitHub.",
+            "secondaryImg":[
+
+            ],
+            "links": [
+            {
+               "reference":"STLContainers.zip",
+               "ribbon":"Download ZIP File"
+            }
+            ]
+         }
+      },
+      {
+         "hidden":{
+            "date":"",
+            "rank":"3",
+            "type":"web"
+         },
+         "visible":{
+            "title":"Website Samples",
+            "projectInfo":"Author:Sue Smith Date:2/17",
+            "primaryImg":"",
+            "description":"For my web-development class I learned HTTP, XHTML, HTML 5, CSS, JavaScript, XML, XSL/XSLT, DTD's and Schema's; effective web site design; dynamic web pages using AJAX technology; an introduction to server-side programming and forms processing using PHP. Several of these skills were used to build this website, and more samples are found below.",
+            "secondaryImg":[
+
+            ],
+            "links":[
+               {
+                  "reference":"website-samples/assign03.html",
+                  "ribbon":"Sample 1"
+               },
+               {
+                  "reference":"website-samples/assign04.html",
+                  "ribbon":"Sample 2"
+               },
+               {
+                  "reference":"website-samples/assign05.html",
+                  "ribbon":"Sample 3"
+               },
+               {
+                  "reference":"website-samples/assign06.html",
+                  "ribbon":"Sample 4"
+               },
+               {
+                  "reference":"website-samples/assign07.html",
+                  "ribbon":"Sample 5"
+               }
+            ]
+         }
+      },
+      {
+         "hidden":{
+            "date":"",
+            "rank":"4",
+            "type":"c++"
+         },
+         "visible":{
+            "title":"Sudoku / Mad-Gab Console Games",
+            "projectInfo":"Author:Karie Smith Date:2/17",
+            "primaryImg":"img/Sudoku.PNG",
+            "description":"I built these two games for my Introduction to Computer Programming class CS124. Throughout the class I learned the ins and outs of C++, and used these skills to solve complex programming challenges. I loved this class and building these games was a blast.",
+            "secondaryImg":[
+
+            ],
+            "links":""
+         }
+      }
+   ]
+}

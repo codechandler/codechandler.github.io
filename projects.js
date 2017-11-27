@@ -72,7 +72,7 @@ if (inputs[2].checked == true)
 
 function fetchData() {
     var id = "projects";
-    var url = "https://codechandler.github.io/projects.txt";
+    var url = "https://codechandler.github.io/projects1.txt";
     httpRequest = false;
     httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function() {

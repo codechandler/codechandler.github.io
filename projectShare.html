@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+    />
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="justinChandler.css">
+    <script type="text/javascript" src="projects.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+
+<body onload="fetchData()">
+    <div class="header">
+        BYU-Idaho Project Share
+    </div>
+    <div class="flex-container">
+        <div class="main">
+            <br/>
+            <div id="projects" class="flex-container" style="justify-content:center">
+            </div>
+            <br/>
+
+            <br/>
+            <br> 
+        </div>
+        <div class="topBar">
+            <h2>Sort Projects</h2>
+            <hr/>
+            <br/>
+            <div class="center">
+            <input type="radio" name="sortBy" value="featured"
+            onclick="sort()"> by Featured
+            &emsp;
+            <input type="radio" name="sortBy" value="date"
+            onclick="sort()"> by Date
+            &emsp;
+            <input type="radio" name="sortBy" value="type"
+            onclick="sort()"> by Type
+            <select id="type" disabled="disabled" onchange="sort()">
+                <option value="C++">C++</option>
+                <option value="Web">Web</option>
+            </select>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    <script type="text/javascript" src="projectsr.js"></script>
+</body>
+
+</html>
