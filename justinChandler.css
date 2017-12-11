@@ -15,15 +15,14 @@
    background-color:  rgb(51, 82, 255);
    text-align: center;
    /* When screen is less than 217 pixels, font will scale take away image*/
-   padding: 30px 0px;
-   height: 70px;
+   
+   height: 100px;
    width: 102%;
    clear: left;
 }
 .footer {
     color: white;
     background-color: rgb(51, 82, 255);
-    margin: -1%;
     text-align: center;
     clear: left;
     height: 50px;
@@ -45,16 +44,11 @@
  p, hr {
      margin: 0% 6%;
  }
- h2 {
-    margin: 0% 6%;
+ h2, h3 {
      text-align: center;
  }
  .menuBar {
      text-align: center;
-    width: 102%;
-    margin: -1%;
-    list-style-type: none;
-    overflow: hidden;
     background-color: rgb(0, 19, 128);
 }
  .menuBar a {
@@ -62,7 +56,6 @@
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 20px;
-    padding: 12px 16px;
     text-decoration: none;
 }
  .menuBar a:hover {
@@ -94,20 +87,19 @@
     padding: 0px;
     font-size: 18px;
 }
-
 .flex-item p{ margin:1%;}
-.main{ order: 1;background: rgba(255, 255, 255, 0); position:relative; width: 100%;}
+.main{ order: 1;background: rgba(255, 255, 255, 0); }
 .column{ order: 0;background: rgb(0, 19, 128);
-    color: white; font-size: 14px; width: 100%; margin: 0% -1% 0% -1%;}
+    color: white; font-size: 14px; width: 100%;}
 .topBar { order: 0;background: rgb(0, 19, 128);
-    color: white; font-size: 14px; width: 100%; margin: 0% -1% 0% -1%; }
+    color: white; font-size: 12px;}
 
 
 @media all and (min-width:535px){
     /* Tablet */
-    .topBar { flex: 1 0%; margin: 0% -1% 0% -1%;}    
-    .column { flex: 1 0%; margin: 0% -1% 0% -1%; text-align: center;}
-    .main { margin: 2% 0% 2% 0%;  }
+    .topBar { flex: 1 0%;}    
+    .column { flex: 1 0%; text-align: center;}
+    .main { }
     .header {
         font-size: 50px;
     }
@@ -116,12 +108,11 @@
 @media all and (min-width:929px) {
 /* Desktop */
 .main { flex: 3 0px; }
-.column { order: 1; margin: 0% 0% -1% -1%;
+.column { order: 1;
     padding: 0% 1% 0% 2%; text-align: left }
-.topBar { flex:0 0 auto; width:100%;position:relative; top:15px; margin: 0% 0% 0% -1%;
-    padding: 0% 0% 0% 2%}
-.main { order: 2; margin: 1% -1% 0% 0%; padding: 40px;}
-.footer { order: 3;position:relative; top:15px }
+.topBar { flex:0 0 auto;}
+.main { order: 2;  padding: 40px;}
+.footer { order: 3;}
 .headerImg{
     width:310px
 }
