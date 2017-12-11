@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Import Project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    iteratorImg = 0; 
+    iteratorLink = 0;
+    function printImg () {
+        var text = "";
+        text += "<p>Image Location:</p><input type=\"text\" name=\"img" + iteratorImg + "\" size=\"12\"><br/>";
+        $("#newFields").html($("#newFields").html() + text);
+        iteratorImg++;
+    }
+    function printLink () {
+        var text = "";
+        text += "<p>Link:</p><input type=\"text\" name=\"link" + iteratorLink + "\" size=\"12\"><br/>";
+        $("#newFields").html($("#newFields").html() + text);
+        iteratorLink++;
+    }
+    $(document).ready(function() {
+        $('.error').hide();
+    });
+    var url;
+    var httpRequest;
+
+    function register(publish) {
+        var query = $("form").serialize();
+        url = "importProject.php?" + query;
+        console.log(url);
+        httpRequest = new XMLHttpRequest();
+        httpRequest.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                displayData(this.responseText);
+            }
+        }
+        httpRequest.open("GET", url, false);
+        httpRequest.send();
+    }
+    
+    function showHideFields() {
+        if (document.getElementById("duet").checked == true)
+            document.getElementById("displayNone").className = "display";
+        else {
+            document.getElementById("displayNone").className = "displayNone";
+            // make sure firstname2 and lastname2 and studentid2 are set to ""
+            document.querySelector("input[name='firstname2']").value = "";
+            document.querySelector("input[name='lastname2']").value = "";
+            document.querySelector("input[name='studentid2']").value = "";
+        }
+    }
+
+    function displayData(responseText) {
+        console.log(responseText);
+        var textARR = responseText.split("$");
+        var text;
+        text = "<table id=\"t01\"> <tr> <th>First Name</th> <th>Last Name</th> <th>Student ID</th> <th>Type</th> <th>Skill Level</th> <th>Instrument</th> <th>Room #</th> <th>Time Slot</th></tr> ";
+        for (h = 0; h < textARR.length; h++) {
+            text += "<tr><td>" + textARR[h] + "</td><td>" + textARR[h + 1] + "</td><td>" + textARR[h + 2] + "</td><td>" + textARR[h + 3] + "</td><td>" + textARR[h + 4] + "</td><td>" + textARR[h + 5] + "</td><td>" + textARR[h + 6] + "</td><td>" + textARR[h + 7] + "</td></tr>";
+            h = h + 7;
+        }
+        text += "</table>";
+        document.getElementById("display").innerHTML = text;
+    }
+    </script>
+<style type="text/css">
+    p {
+        display: inline;
+        font-size: 20px;
+    }
+    h2 {
+        padding: 0px;
+        margin: 0px;
+    }
+    .error {
+        text-align: center;
+        font-size: 25px;
+    }
+    table {
+        width: 95%;
+        margin: auto;
+    }
+    table,
+    th,
+    td {
+        border: 1px solid firebrick;
+        border-collapse: collapse;
+    }
+    td {
+        font-family: verdana;
+    }
+    th {
+        font-family: georgia;
+    }
+    #t01 tr:nth-child(even) {
+        background-color: rgb(175, 104, 104);
+    }
+    #t01 tr:nth-child(odd) {
+        background-color: rgba(214, 214, 214, 0.877);
+    }
+    #t01 th {
+        background-color: firebrick;
+        color: white;
+    }
+    #t01 tr:hover {
+        color: white;
+        background-color: black;
+    }
+    .center {
+        text-align: center
+    }
+    .form {
+        background-color: firebrick;
+        width: 850px;
+        color: white;
+        margin: auto;
+        padding: 2%;
+        border-radius: 25px;
+        box-shadow: 5px 5px 2px #888888;
+    }
+    .displayNone {
+        display: none;
+    }
+    input[type=text],
+    select {
+        padding: 6px 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .button {
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        
+        transition-duration: 0.4s;
+        font-size: 20px;
+        border-radius: 20px;
+        border: 0px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .button:hover {
+        background-color: firebrick;
+        color: rgb(255, 255, 255);
+    }
+    .button1 {
+        background-color: firebrick;
+        color: white;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        
+        transition-duration: 0.4s;
+        font-size: 20px;
+        border-radius: 20px;
+        border: 0px;
+        padding: 10px;
+        cursor: pointer;
+        box-shadow: 5px 5px 2px #888888;
+    }
+    .button1:hover {
+        background-color: white;
+        color: black;
+    }
+</style>
+</head>
+
+<body>
+    <h1 style="text-align: center">Import Project</h1>
+    <div class="error"><span style="color:red;">Error Registering: </span>Please fill out all the fields Correcty!</div>
+    <form action="" class="form">
+        <h2 style="text-align: center">Hidden Data</h2>
+        <p>Date(yy/mm/dd):</p>
+        <input type="text" name="date" size="15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>Type:</p>
+        <input type="text" name="type" size="15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <h2 style="text-align: center">Information</h2>
+        <p>Title:</p>
+        <input type="text" name="title" size="12">
+        <p>Project Info:</p>
+        <textarea name="projectinfo" rows="4" cols="50"></textarea><br/>
+        <p>Primary Image Location:</p>
+        <input type="text" name="primaryimg" size="12">
+        <p>Description:</p>
+        <textarea name="description" rows="4" cols="50"></textarea><br/>
+        <!-- These 2 fields will be created and duplicated with JavaScript when necessary -->
+        <div class="center">
+            <button class="button" type="button" onclick="printImg()">Images++</button>
+            <button class="button" type="button" onclick="printLink()">Links++</button>
+        </div>
+        <div id="newFields" class="center"></div>
+        <div class="center">
+            <button class="button" type="button" onclick="register('true');register('false')">Import</button>
+            <input class="button" type="reset">
+        </div>
+    </form>
+    <br/>
+    <div class="center">
+        <button class="button1" type="button" onclick="register('false');$('.error').hide()">Preview Card</button>
+    </div>
+    <br/>
+    <div class="center" style="overflow-y:auto;height:370px;">
+        <div id="display"></div>
+    </div>
+</body>
+
+</html>
