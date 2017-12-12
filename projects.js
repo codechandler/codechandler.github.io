@@ -72,7 +72,7 @@ if (inputs[2].checked == true)
 
 function fetchData() {
     var id = "projects";
-    var url = "https://codechandler.github.io/projects.txt";
+    var url = "https://justin9four.github.io/projectCards.txt";
     httpRequest = false;
     httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function() {
@@ -109,8 +109,9 @@ function writeData(responseText, id) {
         var ribbon = [];
         
         for (l=0; l<projects[i].visible.links.length; l++) {
-        reference[l] = projects[i].visible.links[l].reference;
-        ribbon[l] = projects[i].visible.links[l].ribbon;
+        reference[l] = projects[i].visible.links[l];
+        ribbon[l] = projects[i].visible.links[l+1];
+        l++;
         }
 
         var order = Number(rank) + 1; 
