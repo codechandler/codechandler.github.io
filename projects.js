@@ -94,23 +94,23 @@ function writeData(responseText, id) {
     var text = [];
     for (i=0; i<projects.length; i++) {
         displayText += "<div class=\"flex-item\" id=\"item";
-        var date = myObj.projects[i].hidden.date;
-        var rank = myObj.projects[i].hidden.rank;
-        var type = myObj.projects[i].hidden.type;
-        var title = myObj.projects[i].visible.title;
-        var projectInfo = myObj.projects[i].visible.projectInfo;
-        var primaryImg = myObj.projects[i].visible.primaryImg;
-        var description = myObj.projects[i].visible.description;
+        var date = projects[i].hidden.date;
+        var rank = projects[i].hidden.rank;
+        var type = projects[i].hidden.type;
+        var title = projects[i].visible.title;
+        var projectInfo = projects[i].visible.projectInfo;
+        var primaryImg = projects[i].visible.primaryImg;
+        var description = projects[i].visible.description;
         var secondaryImg = [];
-        for (j=0; j<myObj.projects[i].visible.secondaryImg.length; j++) {
-            secondaryImg[j] = myObj.projects[i].visible.secondaryImg[j];
+        for (j=0; j<projects[i].visible.secondaryImg.length; j++) {
+            secondaryImg[j] = projects[i].visible.secondaryImg[j];
         }
         var reference = [];
         var ribbon = [];
         
-        for (l=0; l<myObj.projects[i].visible.links.length; l++) {
-        reference[l] = myObj.projects[i].visible.links[l].reference;
-        ribbon[l] = myObj.projects[i].visible.links[l].ribbon;
+        for (l=0; l<projects[i].visible.links.length; l++) {
+        reference[l] = projects[i].visible.links[l].reference;
+        ribbon[l] = projects[i].visible.links[l].ribbon;
         }
 
         var order = Number(rank) + 1; 
