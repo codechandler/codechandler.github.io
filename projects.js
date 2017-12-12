@@ -87,10 +87,12 @@ function fetchData() {
 }
 
 function writeData(responseText, id) {
-    var myObj = JSON.parse(responseText);
+    // split key = ` (backwards quotation)
+    var projects = responseText.split("`");
+    for (x in projects) {  projects[x] = JSON.parse(projects[x]); }
     var displayText = "";
     var text = [];
-    for (i=0; i<myObj.projects.length; i++) {
+    for (i=0; i<projects.length; i++) {
         displayText += "<div class=\"flex-item\" id=\"item";
         var date = myObj.projects[i].hidden.date;
         var rank = myObj.projects[i].hidden.rank;
