@@ -15,8 +15,8 @@
             ],
             "links":[
               {
-               "reference":"https://github.com/codechandler/codechandler.github.io/releases/download/v1.0/AtariPack.zip",
-               "ribbon":"Download ZIP File"
+               "https://github.com/codechandler/codechandler.github.io/releases/download/v1.0/AtariPack.zip",
+               "Download ZIP File"
               }
             ]
          }
@@ -52,8 +52,8 @@
             ],
             "links": [
             {
-               "reference":"STLContainers.zip",
-               "ribbon":"Download ZIP File"
+               "STLContainers.zip",
+               "Download ZIP File"
             }
             ]
          }
@@ -74,24 +74,24 @@
             ],
             "links":[
                {
-                  "reference":"website-samples/assign03.html",
-                  "ribbon":"Sample 1"
+                  "website-samples/assign03.html",
+                  "Sample 1"
                },
                {
-                  "reference":"website-samples/assign04.html",
-                  "ribbon":"Sample 2"
+                  "website-samples/assign04.html",
+                  "Sample 2"
                },
                {
-                  "reference":"website-samples/assign05.html",
-                  "ribbon":"Sample 3"
+                  "website-samples/assign05.html",
+                  "Sample 3"
                },
                {
-                  "reference":"website-samples/assign06.html",
-                  "ribbon":"Sample 4"
+                  "website-samples/assign06.html",
+                  "Sample 4"
                },
                {
-                  "reference":"website-samples/assign07.html",
-                  "ribbon":"Sample 5"
+                  "website-samples/assign07.html",
+                  "Sample 5"
                }
             ]
          }
