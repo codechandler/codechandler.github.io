@@ -108,8 +108,8 @@ function writeData(responseText, id) {
         var reference = [];
         var ribbon = [];
         
+        var n = 0; 
         for (l=0; l<projects[i].visible.links.length; l++) {
-        n = 0; 
         reference[n] = projects[i].visible.links[l];
         ribbon[n] = projects[i].visible.links[l+1];
         l++; 
