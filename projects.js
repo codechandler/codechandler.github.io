@@ -4,6 +4,10 @@
 // global variables
 var httpRequest;
 
+$(".button").click(function() {  
+    var url = $(this).prop('href');
+    window.open(url,'_blank');    
+});
 function expandText (id) {
      // expand the text by making display=inline of div expanded(id)
      if (document.getElementById(id).style.display == "none")
