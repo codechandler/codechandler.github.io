@@ -109,11 +109,11 @@ function writeData(responseText, id) {
         var ribbon = [];
         
         for (l=0; l<projects[i].visible.links.length; l++) {
-        k = 0; 
+        n = 0; 
         reference[k] = projects[i].visible.links[l];
         ribbon[k] = projects[i].visible.links[l+1];
         l++; 
-        k++;
+        n++;
         }
 
         var order = Number(rank) + 1; 
