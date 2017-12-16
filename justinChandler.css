@@ -54,7 +54,7 @@
  }
  .menuBar {
      text-align: center;
-    background-color: rgb(0, 19, 128);
+    background-color: rgb(0, 9, 61);
 }
  .menuBar a {
     display: inline-block;
@@ -68,10 +68,8 @@
     color: rgb(58, 58, 58);
 }
 .button {
-    background-color: rgb(0, 19, 128);
+    background-color: rgb(0, 9, 61);
     color: white;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
 }
 .button:hover {
     background-color: rgb(0, 204, 255);
@@ -96,9 +94,9 @@
 }
 .flex-item p{ margin:1%;}
 .main{ order: 1;background: rgba(255, 255, 255, 0); }
-.column{ order: 0;background: rgb(0, 19, 128);
+.column{ order: 0;background: rgb(0, 9, 61); 
     color: white; font-size: 14px; width: 100%;}
-.topBar { order: 0;background: rgb(0, 19, 128);
+.topBar { order: 0;background: rgb(0, 9, 61);
     color: white; font-size: 12px;}
 
 
