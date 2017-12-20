@@ -72,7 +72,8 @@ if (inputs[2].checked == true)
 
 function fetchData() {
     var id = "projects";
-    var url = "https://cors.io/?http://codechandler.com/projects.txt";
+    //var url = "https://cors.io/?http://codechandler.com/projects.txt";
+    var url = "https://justin9four.github.io/projectCards.txt";    
     httpRequest = false;
     httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function() {
