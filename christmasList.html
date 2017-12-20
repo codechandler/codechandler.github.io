@@ -6,49 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Family Christmas List</title>  
     <style type="text/css">
-    p { font-size: 30px; padding: 0% 5%;}
-    h1 { font-size: 90px;}
-    h2 { font-size: 40px;}
-               table {
-            width: 50%;
-            margin: auto;
-            font-size: 22px;
-        }
-        table,
-        th,
-        td {
-            border: 1px solid rgba(21, 160, 6, 0);
-            border-collapse: collapse;
-        }
-        td {
-            font-family: verdana;
-        }
-        th {
-            font-family: georgia;
-        }
-        #t01 tr:nth-child(even) {
-            background-color:  rgba(214, 0, 0, 0.986);
-        }
-        #t01 tr:nth-child(odd) {
-            background-color: rgba(177, 174, 174, 0.877);
-        }
-        #t01 th {
-            background-color: rgb(19, 160, 6);
-            color: white;
-        }
-        #t01 tr:hover a{
-            color: white;
-            background-color: black;
-        }
-        #t01 tr:hover{
-            color: white;
-            background-color: black;
-        }
-        .center {
-            text-align: center;
-        }
-   </style>
-    <script>
+   a {color:rgb(0, 95, 0);}
+   p { font-size: 30px; padding: 0% 5%; background-color:rgb(255, 158, 158)}
+   h1 { font-size: 90px; padding: 0%; margin: 0%;}
+   h2 { font-size: 40px; padding: 0%; margin: 0%;}
+   table {
+   width: 50%;
+   margin: auto;
+   font-size: 22px;
+   }
+   table,
+   th,
+   td {
+   border: 1px solid rgba(21, 160, 6, 0);
+   border-collapse: collapse;
+   }
+   td {
+   font-family: verdana;
+   }
+   th {
+   font-family: georgia;
+   }
+   #t01 tr:nth-child(even) {
+   background-color:  rgba(214, 0, 0, 0.986);
+   }
+   #t01 tr:nth-child(odd) {
+   background-color: rgba(177, 174, 174, 0.877);
+   }
+   #t01 th {
+   background-color: rgb(19, 160, 6);
+   color: white;
+   }
+   #t01 tr:hover a{
+   color: white;
+   background-color: black;
+   }
+   #t01 tr:hover{
+   color: white;
+   background-color: black;
+   }
+   .center {
+   text-align: center;
+   }
+   .drawnames  { background-color:red; font-size: 22px; }
+</style>
+<script>
         function drawNames() {
             var rand;
             keyArray = ["David","Angela","Joshua","Daniela","Justin","Jeremy","Amy","Kate"];
@@ -85,23 +87,25 @@
             </script>
 </head>
 <body>
-    
-    <div class="center">
-            <h1 style="color:green">Chandler Christmas List</h1>
-        </div>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="center">
+                <h1 style="color:green">Chandler Christmas List</h1>
+             </div>
+             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 The following table shows who has who for Christmas this year! 
                 If you'd like to add a Christmas list (On google docs or something :))
-                just message me the link. Just click on someone's list to view. Merry Christmas!!!</p>
-                <div class=center>
+                just message me the link. Just click on someone's list to view. Merry Christmas!!!
+             </p>
+             <div class="drawnames center">
+                Click to generate new list:
+                <button type="button" onclick="drawNames()">Draw Names &#8681; </button>
+                <p id="nameChart"></p>
+             </div>
+             <div class=center style="background-color:green">
                 <h2>Christmas 2017</h2>
                 <!--   ADD CODE HERE BELOW!!!                -->  
-                <table id="t01"> <tr> <th> Gifter </th> <th> Recipient </th> <th> Wish List </th> </tr><tr> <td> David </td> <td>Jeremy</td> <td> </td> </tr><tr> <td> Angela </td> <td>Joshua</td> <td> </td> </tr><tr> <td> Joshua </td> <td>Angela</td> <td> </td> </tr><tr> <td> Daniela </td> <td>David</td> <td> </td> </tr><tr> <td> Justin </td> <td>Kate</td>  <td>  <a class="active" href="https://goo.gl/eUCYnd"> <b>Justin's</b> List </a> </td> </tr><tr> <td> Jeremy </td> <td>Amy</td> <td> </td> </tr><tr> <td> Amy </td> <td>Justin</td> <td> </td> </tr><tr> <td> Kate </td> <td>Daniela</td> <td> </td> </tr></table>        <button type="button" onclick="drawNames()">Draw Names &#8681; </button>
-        <p id="nameChart"></p>
+                <table id="t01"> <tr> <th> Gifter </th> <th> Recipient </th> <th> Wish List </th> </tr><tr> <td> David </td> <td>Jeremy</td> <td> </td> </tr><tr> <td> Angela </td> <td>Joshua</td> <td> </td> </tr><tr> <td> Joshua </td> <td>Angela</td> <td> </td> </tr><tr> <td> Daniela </td> <td>David</td> <td> </td> </tr><tr> <td> Justin </td> <td>Kate</td>  <td>  <a class="active" href="https://goo.gl/eUCYnd"> <b>Justin's</b> List </a> </td> </tr><tr> <td> Jeremy </td> <td>Amy</td> <td> </td> </tr><tr> <td> Amy </td> <td>Justin</td> <td> </td> </tr><tr> <td> Kate </td> <td>Daniela</td> <td> </td> </tr></table>
+             </div>
     </div>
-
-
 
 </body>
 </html>
