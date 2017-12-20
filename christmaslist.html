@@ -4,11 +4,23 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Family Christmas List</title>  
+    <title>Family Christmas List</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  
     <style type="text/css">
    a {color:rgb(0, 95, 0);}
-   p { font-size: 30px; padding: 0% 5%; background-color:rgb(255, 158, 158)}
-   h1 { font-size: 90px; padding: 0%; margin: 0%;}
+   p { font-size: 25px; padding: 0% 5%; background-color:rgb(255, 158, 158)}
+   h1 { font-size: 340%; padding: 0%; margin: 0%;}
    h2 { font-size: 40px; padding: 0%; margin: 0%;}
    table {
    width: 50%;
@@ -49,6 +61,16 @@
    text-align: center;
    }
    .drawnames  { background-color:red; font-size: 22px; }
+   .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  height: 100px;
+}
+
 </style>
 <script>
         function drawNames() {
@@ -87,9 +109,11 @@
             </script>
 </head>
 <body>
-        <div class="center">
-                <h1 style="color:green">Chandler Christmas List</h1>
-             </div>
+        <div class="wrapper center" >
+                <img src="christmastree.png" class="item" alt="Christmas Tree" style="width:50px;height:50px">                
+                <h1 class="item-1" style="color:green">Chandler Christmas List</h1>
+                <img src="christmastree.png" class="ite-2" alt="Christmas Tree" style="width:50px;height:50px">                
+            </div>
              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 The following table shows who has who for Christmas this year! 
                 If you'd like to add a Christmas list (On google docs or something :))
