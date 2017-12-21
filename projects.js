@@ -3,6 +3,7 @@
 //*************************************************************//
 // global variables
 var httpRequest;
+//var date = [];
 
 function expandText (id) {
      // expand the text by making display=inline of div expanded(id)
@@ -26,7 +27,7 @@ var inputs = document.querySelectorAll("input[name='sortBy']");
 // Sort by Featured
 if (inputs[0].checked == true)
 {
-    document.getElementById("type").disabled = true;    
+document.getElementById("type").disabled = true;    
 document.getElementById("item0").style.order = 1;
 document.getElementById("item1").style.order = 2;
 document.getElementById("item2").style.order = 3;
@@ -36,7 +37,9 @@ document.getElementById("item4").style.order = 5;
 // Sort by Date (Newest First)
 if (inputs[1].checked == true)
 {
-    document.getElementById("type").disabled = true;    
+//date.sort();
+//date.reverse();
+document.getElementById("type").disabled = true;    
 document.getElementById("item0").style.order = 4;
 document.getElementById("item1").style.order = 3;
 document.getElementById("item2").style.order = 2;
@@ -96,6 +99,7 @@ function writeData(responseText, id) {
     for (i=0; i<projects.length; i++) {
         displayText += "<div class=\"flex-item\" id=\"item";
         var date = projects[i].hidden.date;
+        //date[i] = date;
         var rank = projects[i].hidden.rank;
         var type = projects[i].hidden.type;
         var title = projects[i].visible.title;
