@@ -77,17 +77,17 @@
 <script>
         function drawNames() {
             var rand;
-            keyArray = ["Justin","Angela","Jeremy","Joshua","Daniela","Kate","David"];
-            valueArray = ["Kate","Jeremy","Joshua","Angela","Justin","Daniela","David"];
+            keyArray = ["Justin","Angela","Jeremy","Joshua and Daniela","Kate","David"];
+            valueArray = ["Kate","Jeremy","Joshua and Daniela","Angela","Justin","David"];
             var person = [];
             var displayText;
-            for (var i = 0; i <= 6; i++) {
-                rand1 = Math.floor((Math.random() * (7 - i)));
-                rand2 = Math.floor((Math.random() * (7 - i)));
+            for (var i = 0; i <= 5; i++) {
+                rand1 = Math.floor((Math.random() * (6 - i)));
+                rand2 = Math.floor((Math.random() * (6 - i)));
                 // make sure rand1 and rand2 are not the same IE. Joshua can not shop for Joshua
-                if (i != 6)
+                if (i != 5)
                 while (keyArray[rand1]==valueArray[rand2])
-                rand2 = Math.floor((Math.random() * (7 - i)));
+                rand2 = Math.floor((Math.random() * (6 - i)));
                 // assign names
                 person[keyArray[rand1]] = valueArray[rand2];
                 // use splice method to remove item from array
@@ -98,7 +98,7 @@
                 displayText = "<table id=\"t01\"> <tr> <th> Gifter </th> <th> Recipient </th> <th> Wish List </th> </tr>";
                 displayText += "<tr> <td> David </td> <td>" + person["David"] + "</td> <td> </td> </tr>";
                 displayText += "<tr> <td> Angela </td> <td>" + person["Angela"] + "</td> <td> </td> </tr>";
-                displayText += "<tr> <td> Joshua </td> <td>" + person["Joshua"] + "</td> <td> </td> </tr>";
+                displayText += "<tr> <td> Joshua and Daniela </td> <td>" + person["Joshua and Daniela"] + "</td> <td> </td> </tr>";
                 displayText += "<tr> <td> Daniela </td> <td>" + person["Daniela"] + "</td> <td> </td> </tr>";
                 displayText += "<tr> <td> Justin </td> <td>" + person["Justin"] + "</td>  <td>  <a class=\"active\" href=\"https://goo.gl/eUCYnd\"> <b>Justin's</b> List </a> </td> </tr>";
                 displayText += "<tr> <td> Jeremy </td> <td>" + person["Jeremy"] + "</td> <td> </td> </tr>";
